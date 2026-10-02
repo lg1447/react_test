@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-surface: #ffffff;
+  --radius-card: 12px;
+}
+
+/* В TMA высота берётся из viewportStableHeight (см. TmaProvider) */
+[data-tg-theme] #root {
+  min-height: var(--tg-vh);
+}
