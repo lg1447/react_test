@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Redirecting...</title>
+    </head>
+    <body>
+        <script>
+            const pathSegmentsToKeep = 1;
+            const l = window.location;
+            const segments = l.pathname.split('/').filter(Boolean);
+            const keep = segments.slice(0, pathSegmentsToKeep);
+            const redirect = '/' + keep.join('/') + '/index.html' + l.hash + l.search;
+            l.replace(redirect)
+        </script>
+    </body>
+</html>
