@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Layout } from '../components/layout/Layout';
+import { Layout } from '../components/layout/layout';
 import { HomePage } from '../features/home/HomePage';
-import { ProfilePage } from '../features/profile/ProfilePage';
+// import { ProfilePage } from '../features/profile/ProfilePage';
 
 export const router = createBrowserRouter([
   {
@@ -9,7 +9,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: 'profile', element: <ProfilePage /> },
+      // { path: 'profile', element: <ProfilePage /> },
     ],
   },
   {
@@ -17,7 +17,6 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: 'profile', element: <ProfilePage /> },
     ],
   },
 ]);

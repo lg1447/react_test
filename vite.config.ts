@@ -33,4 +33,5 @@ export default defineConfig({
     }),
   ],
   server: { host: true, port: 5173 },
+  base: '/lg1447/react_test/', // TODO: remove
 });
